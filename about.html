@@ -44,7 +44,7 @@
   {
     "@context": "https://schema.org",
     "@type": "AboutPage",
-    "dateModified": "2026-11-01",
+    "dateModified": "2026-11-07",
     "name": "About Us | Rapid IPTV",
     "url": "https://rapidtv.org/about.html",
     "description": "Rapid IPTV brings 55,000+ channels and 200,000+ on-demand titles to viewers worldwide. Stream in 4K or 8K on your favorite device. Multilingual, global support.",
@@ -82,7 +82,7 @@
             --brand-r: 112;
             --brand-g: 73;
             --brand-b: 253;
-            font-family: 'Plus Jakarta Sans', -apple-system, sans-serif !important;
+            font-family: 'Inter', -apple-system, sans-serif !important;
         }
         /* Header & Logo Pure SVG Mark */
         .logo-icon {
@@ -470,11 +470,38 @@
         :root { --accent: #7049fd; }
     </style>
     
+<style id="promo-style">
+:root { --promo-h: 42px; --promo-bg: #7049fd; }
+.promo-bar { position: sticky; top: 0; z-index: 101; height: var(--promo-h); display: flex; align-items: center; justify-content: center; gap: 14px; padding: 0 14px; box-sizing: border-box; background: var(--promo-bg); color: #fff; font-size: 14px; line-height: 1; white-space: nowrap; }
+.promo-bar-name { font-weight: 800; letter-spacing: .02em; min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+.promo-bar-sep { opacity: .6; }
+.promo-bar-deal { font-weight: 800; min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+.promo-bar-note { opacity: .85; min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+.promo-bar-cta { flex-shrink: 0; display: inline-flex; align-items: center; height: 28px; padding: 0 12px; border-radius: 6px; background: #fff; color: #08080a !important; font-size: 13px; font-weight: 700; text-decoration: none; }
+.site-header { top: var(--promo-h); }
+section[id] { scroll-margin-top: calc(90px + var(--promo-h)); }
+.plan-old-price { color: #9aa0ab; font-size: 1.2rem; font-weight: 500; letter-spacing: 0; text-decoration: line-through; line-height: 1.2; margin-right: 10px; }
+.multi-plan-price-row .plan-old-price { margin: 0 0 0 8px; font-size: .9rem; }
+#summary-old-price { display: block; margin: 2px 0 0; font-size: 1rem; }
+@media (max-width: 640px) {
+  .promo-bar { gap: 10px; padding: 0 10px; font-size: 13px; }
+  .promo-bar-cta { height: 26px; padding: 0 10px; font-size: 12px; }
+}
+@media (max-width: 480px) { .promo-bar-note { display: none; } }
+@media (max-width: 350px) { .promo-bar-sep { display: none; } .promo-bar { gap: 8px; padding: 0 8px; } }
+</style>
 <style id="contrast-fix">:root{--accent-ink:#9071fd}.btn-primary,.btn-card-primary,.reseller-btn{background:#7049fd !important;border-color:#7049fd !important}.support-wa-btn,.install-wa-btn{background:#15803d !important}.support-wa-btn:hover,.install-wa-btn:hover{background:#166534 !important}.pricing-toggle-tab.active .pricing-toggle-icon,.pricing-toggle-tab.active .pricing-toggle-title,.pricing-toggle-tab.active .pricing-toggle-sub,.popular-badge-top,.plan-badge-top,.plan-card-btn.solid-featured-btn,.mockup-submit-btn,.multi-step-num,.multi-plan-badge-pill.popular-tag{color:#ffffff !important}</style>
 <script>window.TVKIX_SITE = {"brand":"Rapid IPTV","domain":"rapidtv.org","accent":"#7049fd","rgb":"112, 73, 253","dark":"#5e3dd5","hover":"#6743e9","mail":"cmFwaWRpcHR2MUB0dmtpeC5jb20="};</script>
     <script src="https://tvkix.com/sat-modal.js" defer></script>
 </head>
 <body style="background-color:#08080a;">
+<div id="promo-bar" class="promo-bar" role="region" aria-label="Black Friday offer" data-nosnippet>
+<span class="promo-bar-name">BLACK FRIDAY ›</span>
+<span class="promo-bar-sep">|</span>
+<span class="promo-bar-deal">Up to 50% OFF</span>
+<span class="promo-bar-note">Don't miss out</span>
+<a class="promo-bar-cta" href="./#pricing">Claim deal</a>
+</div><!--promo-bar-->
 
   <!-- =========================================================================
        HEADER
@@ -484,12 +511,12 @@
       <a href="./" class="brand-logo">
         <span class="logo-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
   <defs>
-    <linearGradient id="iconGrad_7om511" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="iconGrad_5xbs7y" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#7049fd"/>
       <stop offset="100%" stop-color="#7049fd"/>
     </linearGradient>
   </defs>
-  <rect width="100" height="100" rx="18" fill="url(#iconGrad_7om511)"/>
+  <rect width="100" height="100" rx="18" fill="url(#iconGrad_5xbs7y)"/>
   <path d="M 50 13 L 82 31.5 L 82 68.5 L 50 87 L 18 68.5 L 18 31.5 Z" fill="none" stroke="#ffffff" stroke-width="7" stroke-linejoin="round"/>
   <g class="icon-letter" data-letter="R" fill="#ffffff" transform="translate(37.004 64.41) scale(0.03600 -0.03600)"><path transform="translate(0 0)" d="M66 0V745H351Q428 745 487.5 718Q547 691 581 638Q615 585 615 507Q615 431 580 377.5Q545 324 486 297L656 0H482L298 329L398 270H221V0ZM221 405H352Q385 405 409 418Q433 431 446.5 454Q460 477 460 507Q460 538 446.5 561Q433 584 409 597Q385 610 352 610H221Z"/></g>
 </svg></span>
@@ -528,7 +555,7 @@
           <span>Global Streaming</span>
         </div>
         <h1>About Rapid IPTV</h1>
-        <p class="page-updated" style="margin:.25rem 0 1rem;font-size:.85rem;color:#94a3b8;">Last updated: <time datetime="2026-11-01">November 1, 2026</time></p>
+        <p class="page-updated" style="margin:.25rem 0 1rem;font-size:.85rem;color:#94a3b8;">Last updated: <time datetime="2026-11-07">November 7, 2026</time></p>
         <div class="policy-last-updated">Rapid IPTV is made for an international, multi-language audience, offering live TV and on-demand entertainment on most modern devices.</div>
       </div>
 
@@ -602,12 +629,12 @@
           <a href="./" class="brand-logo">
             <span class="logo-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
   <defs>
-    <linearGradient id="iconGrad_7om511" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="iconGrad_5xbs7y" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#7049fd"/>
       <stop offset="100%" stop-color="#7049fd"/>
     </linearGradient>
   </defs>
-  <rect width="100" height="100" rx="18" fill="url(#iconGrad_7om511)"/>
+  <rect width="100" height="100" rx="18" fill="url(#iconGrad_5xbs7y)"/>
   <path d="M 50 13 L 82 31.5 L 82 68.5 L 50 87 L 18 68.5 L 18 31.5 Z" fill="none" stroke="#ffffff" stroke-width="7" stroke-linejoin="round"/>
   <g class="icon-letter" data-letter="R" fill="#ffffff" transform="translate(37.004 64.41) scale(0.03600 -0.03600)"><path transform="translate(0 0)" d="M66 0V745H351Q428 745 487.5 718Q547 691 581 638Q615 585 615 507Q615 431 580 377.5Q545 324 486 297L656 0H482L298 329L398 270H221V0ZM221 405H352Q385 405 409 418Q433 431 446.5 454Q460 477 460 507Q460 538 446.5 561Q433 584 409 597Q385 610 352 610H221Z"/></g>
 </svg></span>
